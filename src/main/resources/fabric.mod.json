@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "bloxycola",
+  "version": "${version}",
+
+  "name": "Bloxy Cola!",
+  "description": "Simple mod which add Bloxy Cola TM.",
+  "authors": [
+    "camoweed_, sprite by ian.awesome."
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"camoweed.bloxycola.BloxyColaMain"
+    ],
+		"beforeGameStart": [
+			"camoweed.bloxycola.BloxyColaMain"
+		],
+		"afterGameStart": [
+			"camoweed.bloxycola.BloxyColaMain"
+		],
+		"recipesReady": [
+			"camoweed.bloxycola.BloxyColaRecipe"
+		],
+    "initModels": [
+		"camoweed.bloxycola.BloxyColaModel"
+	 ],
+   "onInitialize": [
+			"camoweed.bloxycola.BloxyColaMain"
+		]
+	},
+  "mixins": [
+      "bloxycola.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "*",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
